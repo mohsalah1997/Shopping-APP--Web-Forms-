@@ -1,0 +1,482 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0844890-F3C8-4E81-B0F5-CCCC915426AA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectMM</RootNamespace>
+    <AssemblyName>ProjectMM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\AddCategory.aspx" />
+    <Content Include="admin\AddNews.aspx" />
+    <Content Include="admin\AddProduct.aspx" />
+    <Content Include="admin\AdminPageDufalt.aspx" />
+    <Content Include="admin\css\bootstrap.min.css" />
+    <Content Include="admin\css\styles.css" />
+    <Content Include="admin\EditCategory.aspx" />
+    <Content Include="admin\EditNews.aspx" />
+    <Content Include="admin\EditProduct.aspx.aspx" />
+    <Content Include="admin\EditUsers.aspx" />
+    <Content Include="admin\js\bootstrap.min.js" />
+    <Content Include="admin\js\scripts.js" />
+    <Content Include="admin\ShowMessages.aspx" />
+    <Content Include="admin\ShowUserSales.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="Images\222.PNG" />
+    <Content Include="Images\bb.jpg" />
+    <Content Include="Images\ff.jpg" />
+    <Content Include="Images\HP.jpg" />
+    <Content Include="Images\iphone.jpg" />
+    <Content Include="Images\JJ.jpg" />
+    <Content Include="Images\Jj.png" />
+    <Content Include="Images\kk.jpg" />
+    <Content Include="Images\lenovo.jpg" />
+    <Content Include="Images\new.jpg" />
+    <Content Include="Images\O.jpg" />
+    <Content Include="Images\R.jpg" />
+    <Content Include="Images\RR.jpg" />
+    <Content Include="Images\samsoung.jpg" />
+    <Content Include="Images\screan1.jpg" />
+    <Content Include="Images\T.jpg" />
+    <Content Include="Images\tt.jpg" />
+    <Content Include="Images\watch.jpg" />
+    <Content Include="Images\watcha.jpg" />
+    <Content Include="Images\yy.jpg" />
+    <Content Include="log\css\style.css" />
+    <Content Include="log\fonts\material-icon\css\material-design-iconic-font.css" />
+    <Content Include="log\fonts\material-icon\css\material-design-iconic-font.min.css" />
+    <Content Include="log\fonts\material-icon\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300italic.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500italic.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-600.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700italic.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800italic.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-900.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-italic.svg" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-regular.svg" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700.svg" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700italic.svg" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-italic.svg" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-regular.svg" />
+    <Content Include="log\images\signin-image.jpg" />
+    <Content Include="log\images\signup-image.jpg" />
+    <Content Include="log\js\main.js" />
+    <Content Include="log\log.aspx" />
+    <Content Include="log\signup.aspx" />
+    <Content Include="log\vendor\jquery\jquery-ui.min.js" />
+    <Content Include="log\vendor\jquery\jquery.min.js" />
+    <Content Include="mains\about.aspx" />
+    <Content Include="mains\Alpum.aspx" />
+    <Content Include="mains\contact.aspx" />
+    <Content Include="mains\css\bootstrap.min.css" />
+    <Content Include="mains\css\style.css" />
+    <Content Include="mains\detailsprodect.aspx" />
+    <Content Include="mains\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="mains\img\01.jpg" />
+    <Content Include="mains\img\02.jpg" />
+    <Content Include="mains\img\facebook.jpg" />
+    <Content Include="mains\img\fav.png" />
+    <Content Include="mains\img\logo.png" />
+    <Content Include="mains\img\moh.jpg" />
+    <Content Include="mains\img\portfolio\01.jpg" />
+    <Content Include="mains\img\portfolio\010.jpg" />
+    <Content Include="mains\img\portfolio\02.jpg" />
+    <Content Include="mains\img\portfolio\03.jpg" />
+    <Content Include="mains\img\portfolio\04.jpg" />
+    <Content Include="mains\img\portfolio\05.jpg" />
+    <Content Include="mains\img\portfolio\06.jpg" />
+    <Content Include="mains\img\portfolio\07.jpg" />
+    <Content Include="mains\img\portfolio\08.jpg" />
+    <Content Include="mains\img\portfolio\09.jpg" />
+    <Content Include="mains\img\portfolio\portfolio.jpg" />
+    <Content Include="mains\ionicons\css\ionicons.min.css" />
+    <Content Include="mains\ionicons\facebook.jpg" />
+    <Content Include="mains\js\animated-headline.js" />
+    <Content Include="mains\js\bootstrap.min.js" />
+    <Content Include="mains\js\custom.js" />
+    <Content Include="mains\js\isotope.pkgd.min.js" />
+    <Content Include="mains\js\jquery-2.1.1.js" />
+    <Content Include="mains\js\menu.js" />
+    <Content Include="mains\js\modernizr.js" />
+    <Content Include="mains\main.aspx" />
+    <Content Include="mains\news.aspx" />
+    <Content Include="mains\prodect.aspx" />
+    <Content Include="mains\profile.aspx" />
+    <Content Include="mains\VS.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AddNews.aspx.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddNews.aspx.designer.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdminPageDufalt.aspx.cs">
+      <DependentUpon>AdminPageDufalt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AdminPageDufalt.aspx.designer.cs">
+      <DependentUpon>AdminPageDufalt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\EditCategory.aspx.cs">
+      <DependentUpon>EditCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EditCategory.aspx.designer.cs">
+      <DependentUpon>EditCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\EditNews.aspx.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EditNews.aspx.designer.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\EditProduct.aspx.aspx.cs">
+      <DependentUpon>EditProduct.aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EditProduct.aspx.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\EditUsers.aspx.cs">
+      <DependentUpon>EditUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EditUsers.aspx.designer.cs">
+      <DependentUpon>EditUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ShowMessages.aspx.cs">
+      <DependentUpon>ShowMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ShowMessages.aspx.designer.cs">
+      <DependentUpon>ShowMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ShowUserSales.aspx.cs">
+      <DependentUpon>ShowUserSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ShowUserSales.aspx.designer.cs">
+      <DependentUpon>ShowUserSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="log\log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log\log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="log\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\Alpum.aspx.cs">
+      <DependentUpon>Alpum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\Alpum.aspx.designer.cs">
+      <DependentUpon>Alpum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\detailsprodect.aspx.cs">
+      <DependentUpon>detailsprodect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\detailsprodect.aspx.designer.cs">
+      <DependentUpon>detailsprodect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\prodect.aspx.cs">
+      <DependentUpon>prodect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\prodect.aspx.designer.cs">
+      <DependentUpon>prodect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mains\VS.aspx.cs">
+      <DependentUpon>VS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mains\VS.aspx.designer.cs">
+      <DependentUpon>VS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mains\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="mains\fonts\glyphicons-halflings-regular.eot_" />
+    <Content Include="mains\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="mains\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="mains\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="mains\img\.DS_Store" />
+    <Content Include="mains\ionicons\fonts\ionicons.eot_v=2.0.0" />
+    <Content Include="mains\ionicons\fonts\ionicons.svg_v=2.0.0" />
+    <Content Include="mains\ionicons\fonts\ionicons.ttf_v=2.0.0" />
+    <Content Include="mains\ionicons\fonts\ionicons.woff_v=2.0.0" />
+    <Content Include="log\.sass-cache\21880c0ffe15753a53f8402e9f64e1077e071510\style.scssc" />
+    <Content Include="log\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\extend.scssc" />
+    <Content Include="log\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\fonts.scssc" />
+    <Content Include="log\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\global.scssc" />
+    <Content Include="log\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\minxi.scssc" />
+    <Content Include="log\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\variables.scssc" />
+    <Content Include="log\.sass-cache\3948936f84e1a30385e73a9be140b58b48c82e15\style.scssc" />
+    <Content Include="log\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\main.scssc" />
+    <Content Include="log\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\responsive.scssc" />
+    <Content Include="log\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\extend.scssc" />
+    <Content Include="log\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\fonts.scssc" />
+    <Content Include="log\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\global.scssc" />
+    <Content Include="log\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\minxi.scssc" />
+    <Content Include="log\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\variables.scssc" />
+    <Content Include="log\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\main.scssc" />
+    <Content Include="log\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\responsive.scssc" />
+    <Content Include="log\css\style.css.map" />
+    <Content Include="log\fonts\material-icon\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="log\fonts\material-icon\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="log\fonts\material-icon\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="log\fonts\material-icon\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300italic.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300italic.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300italic.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-300italic.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500italic.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500italic.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500italic.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-500italic.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-600.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-600.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-600.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-600.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700italic.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700italic.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700italic.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-700italic.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800italic.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800italic.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800italic.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-800italic.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-900.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-900.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-900.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-900.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-italic.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-italic.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-italic.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-italic.woff2" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-regular.eot" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-regular.ttf" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-regular.woff" />
+    <Content Include="log\fonts\poppins\poppins-v5-latin-regular.woff2" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700.eot" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700.ttf" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700.woff" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700.woff2" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700italic.eot" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700italic.ttf" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700italic.woff" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-700italic.woff2" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-italic.eot" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-italic.ttf" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-italic.woff" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-italic.woff2" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-regular.eot" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-regular.ttf" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-regular.woff" />
+    <Content Include="log\fonts\poppins\roboto-condensed-v16-latin-regular.woff2" />
+    <Content Include="log\scss\common\extend.scss" />
+    <Content Include="log\scss\common\fonts.scss" />
+    <Content Include="log\scss\common\global.scss" />
+    <Content Include="log\scss\common\minxi.scss" />
+    <Content Include="log\scss\common\variables.scss" />
+    <Content Include="log\scss\layouts\main.scss" />
+    <Content Include="log\scss\layouts\responsive.scss" />
+    <Content Include="log\scss\style.scss" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60043</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60043/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
